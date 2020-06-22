@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Assignment03</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_addUser">Add User</string>
+    <string name="action_selectUser">Select User</string>
+    <string name="action_deleteUser">Delete User</string>
+    <string name="stepTitle">STEPS</string>
+    <string name="stepDefault">NULL</string>
+    <string name="startSteps">Start</string>
+    <string name="stopSteps">Stop</string>
+    <string name="reportText">Your Report</string>
+    <string name="graphStepInfo">Number of Steps</string>
+    <string name="altInfo">Altitude</string>
+</resources>

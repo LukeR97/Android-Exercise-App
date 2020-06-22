@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bkgrd">
+
+    <TextView
+        android:id="@+id/StepTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="@string/stepTitle"
+        android:textColor="@color/Black"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/Counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stepDefault"
+        android:textColor="@color/Black"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textSize="100sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/startBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="bottom"
+            android:text="@string/startSteps"
+            android:textSize="30sp"
+            android:background="@color/startGreen">
+        </Button>
+
+        <Button
+            android:id="@+id/stopBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="bottom"
+            android:text="@string/stopSteps"
+            android:textSize="30sp"
+            android:background="@color/stopOrange">
+        </Button>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/viewTitle"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/reportTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reportText"
+        android:textSize="50sp"
+        android:textColor="@color/Black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="15dp">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:rotation="-90"
+        android:text="@string/altInfo"
+        android:textSize="30sp"
+        android:textColor="@color/Blue">
+
+    </TextView>
+    <!-- This view below is to designate the top of our graph
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/Black"
+        android:layout_above="@id/graphView"/> -->
+
+    <com.example.assignment03.CustomView
+        android:id="@+id/graphView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reportTitle"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="60dp"/>
+
+    <!-- This view below is used to designate the bottom of our graph -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/Black"
+        android:layout_above="@id/reportInfo"/>
+
+    <!--Need to include Altitude here -->
+    <TextView
+        android:id="@+id/reportInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="@string/graphStepInfo"
+        android:textColor="@color/Black"
+        android:textSize="30sp">
+    </TextView>
+
+</RelativeLayout>
